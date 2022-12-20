@@ -1,11 +1,3 @@
-# for x in range(0, 37):
-#     num1 = 1*37**3 + 2*37**2 + 3*37 + x
-#     num2 = 4*37**3 + x*37**2 + 5*37 + 9
-#     summa = num1 + num2
-#     if summa%36 == 0:
-#         print(x)
-
-
 import string
 
 def numberToBase(n, b):
@@ -34,4 +26,5 @@ for x in alphabet:
     key2 = '4' + x + '59'
     summa = nums[key1] + nums[key2]
     if summa%36 == 0:
-        print(summa//36)
+        print('x =', x)
+        break
