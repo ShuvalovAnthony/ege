@@ -21,6 +21,7 @@ for i in range(1000000):
     nums[res] = i
 
 
+
 for x in alphabet:
     key1 = '123' + x
     key2 = '4' + x + '59'
