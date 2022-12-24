@@ -1,4 +1,4 @@
-f = open('ege/24/27689/24.txt').readline()
+f = open('24/27689/24.txt').readline()
 
 
 etalon = 'XYZ'

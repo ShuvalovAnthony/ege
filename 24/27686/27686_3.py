@@ -1,4 +1,4 @@
-f = open('ege/24/27686/24.txt').readline()
+f = open('24/27686/24.txt').readline()
 
 f = f.replace('Y', 'Z').split('Z')
 

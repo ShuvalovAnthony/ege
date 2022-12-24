@@ -3,6 +3,9 @@ f = open('ege/24/27686/24.txt').readline()
 
 max_dlina = 0
 
+'XYXXYYXYZYZYZZYYZXYXYXYYXYX'
+
+
 for i in range(len(f)):
     if f[i] == 'X':
         counter = 1
