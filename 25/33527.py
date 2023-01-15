@@ -19,8 +19,3 @@ def delit(n):
 
 for i in range(101000000, 102000001):
     if delit(i): print(delit(i))
-
-
-
-
-

@@ -1,27 +1,28 @@
-f = open('ege/24/35284/24.txt')
+from string import ascii_uppercase
 
-strings = [i.strip() for i in f]
+f = open('24/35482/24.txt')
 
-min_g = 10**6
-most_common_letter = ''
-string_with_less_g = ''
+strings = [i.strip() for i in f] # сохраняем все строчки в список строк
 
+min_g = 10**6 # колво букв G по умолчания - миллион
 
-def most_common_letter(s:str):
-    import string
-    max_count = 0
-    res_letter = ''
-    for letter in string.ascii_uppercase:
-        if s.count(letter) >= max_count:
-            max_count = s.count(letter)
-            res_letter = letter
-    return res_letter
+string_with_less_g = '' # здесь мы храним строчку, в которой после пробега по всему файлу,
+                        # будет меньше всего букв G
 
 
-for string in strings:
-    if string.count('G') < min_g:
-        min_g = string.count('G')
-        string_with_less_g = string
+for string in strings: # бежим по всем строчкам в файле
+    if string.count('G') < min_g: # если количество G СТРОГО меньше, чем минимальное предыдущее
+        min_g = string.count('G') # тогда обновляем минимальное количество букв G
+        string_with_less_g = string # и соотв обновляем строку с минимальным количеством G
+
+res_letter = '' # ОТВЕТ
+
+max_count = 0
+res_letter = ''
+for letter in ascii_uppercase: # бежим по всем заглавным буквам англ алфавита
+    if string_with_less_g.count(letter) >= max_count:
+        max_count = string_with_less_g.count(letter)
+        res_letter = letter
 
 
-print(most_common_letter(string_with_less_g))
+print(res_letter)
