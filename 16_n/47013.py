@@ -2,13 +2,13 @@ answ = []
 
 # 0 1 1 2 
 
-for i in range(10**9): # n = 10
-    if i == 0:
+for n in range(10**9): # n = 10
+    if n == 0:
         answ.append(0)
-    elif i%2 == 1:
+    elif n%2 == 1:
         answ.append(answ[-1] + 1)
     else:
-        answ.append(answ[i//2])
+        answ.append(answ[n//2])
 
 
 print(answ.count(3))
@@ -25,3 +25,4 @@ print(answ.count(3))
 #     answ.append(f(i))
 
 # print(answ, answ.count(3))
+

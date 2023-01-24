@@ -16,7 +16,6 @@ max_kolvo = 0
 letter = 'ABOBA - CHELOVEK ILI TAINA VSELENNOI?'
 
 for j in string.ascii_uppercase: # 'ABCDEF...'
-
     if stroka.count(j) >= max_kolvo:
         max_kolvo = stroka.count(j)
         letter = j

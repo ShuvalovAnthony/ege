@@ -1,4 +1,4 @@
-s = open('24/task1/24.txt').read()
+s = open('task1/24.txt').read()
 
 
 sp = []
