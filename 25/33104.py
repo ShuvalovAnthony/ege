@@ -18,21 +18,22 @@ for i in range(289123456, 389123456):
 
 
 # Лучший способ
-
-
-# def simple(n):
-#     for i in range(2, int(n**0.5) + 1):
-#         if n%i == 0:
-#             return False
-#     return True
+print('_'*20)
 
 
 
-# def delit(n):
-#     if n**0.25 == int(n**0.25):
-#         return simple(n**0.25)
-#     return False
+def simple(n):
+    for i in range(2, int(n**0.5) + 1):
+        if n%i == 0:
+            return False
+    return n
 
 
-# for i in range(289123456, 389123456):
-#     if delit(i): print(i, delit(i))
+def delit(n):
+    if n**0.25 == int(n**0.25):
+        return simple(n**0.25)
+    return False
+
+
+for i in range(289123456, 389123456):
+    if delit(i): print(i, i//delit(i))
