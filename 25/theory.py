@@ -14,6 +14,7 @@ def all_delit(n:int):
     return sorted(set(deliteli))
 
 
+
 # все НЕТРИВИАЛЬНЫЕ (кроме 1 и самого числа) делители числа
 def not_trivial_delit(n:int):
     deliteli = []
@@ -44,7 +45,6 @@ def razlozh_na_prostie(n:int):
         result += str(key) + '^' + str(value) + ' * '
     return result
 
-print(razlozh_na_prostie(337500))
 
 
     
