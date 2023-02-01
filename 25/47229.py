@@ -6,7 +6,5 @@ def mask(num):
     return False
 
 
-
 for i in range(2023, 10**10, 2023):
     if mask(i): print(i, i//2023)
-
