@@ -1,4 +1,4 @@
-f = open('ege/26/27423/26_demo.txt')
+f = open('26/27423/26_demo.txt')
 
 
 s, n = map(int, f.readline().split()) # s - свободное место под архивы
