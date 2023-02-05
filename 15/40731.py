@@ -26,4 +26,4 @@ for start in range(-200, 200):
                 res = (start, stop)
             
 
-print(answ + 1)
+print(answ + 1, res)

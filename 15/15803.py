@@ -1,6 +1,3 @@
-from re import L
-
-
 def a(start, stop, x):
     return start <= x <= stop
 
