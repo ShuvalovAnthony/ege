@@ -1,6 +1,6 @@
 # задача с сайта https://kompege.ru/
 
-f = open('26/kolca/6056/26.txt')
+f = open('26/kolca/6031/26.txt')
 
 diameters = sorted(set([int(i) for i in f]))
 
@@ -12,7 +12,7 @@ for i in range(len(diameters)):
     tmp_count = 1
     last_d = diameters[i]
     for j in range(i + 1, len(diameters)):
-        if diameters[j] >= last_d + 56:
+        if diameters[j] >= last_d + 6:
             tmp_count += 1
             last_d = diameters[j]
 
