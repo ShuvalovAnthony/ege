@@ -4,7 +4,7 @@ f = open('26/kolca/6056/26.txt')
 
 diameters = sorted(set([int(i) for i in f]))
 
-max_d = 0
+max_d = 0 # максимальный димаметр самого МАЛОГО кольца
 max_count = 0
 
 
@@ -12,7 +12,7 @@ for i in range(len(diameters)):
     tmp_count = 1
     last_d = diameters[i]
     for j in range(i + 1, len(diameters)):
-        if diameters[j] >= last_d + 56:
+        if diameters[j] >= diameters[j - 1] + 56:
             tmp_count += 1
             last_d = diameters[j]
 

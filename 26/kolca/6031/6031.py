@@ -4,6 +4,8 @@ f = open('26/kolca/6031/26.txt')
 
 diameters = sorted(set([int(i) for i in f]))
 
+
+print([diameters[-1]])
 max_d = 0
 max_count = 0
 
