@@ -1,11 +1,8 @@
-f = open("ege/27__/27891/27-A_2.txt")
-
+f = open("27__/27891/27-A_2.txt")
 
 nums = [int(i) for i in f]
 
-
 max_num = -1
-
 
 for i in range(len(nums) - 1):
     for j in range(i + 1, len(nums)):
