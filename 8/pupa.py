@@ -19,7 +19,6 @@ for a1 in ('123456'):
                     for a6 in ('0123456'):
                         num = a1 + a2 + a3 + a4 + a5 + a6
                         if (num.count('6') == 1) and check(num):
-                            print(num)
                             count += 1
 
 print(count)
