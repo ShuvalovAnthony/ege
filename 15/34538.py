@@ -1,32 +1,30 @@
 from itertools import combinations
 
 def p(x):
-    return 19 <= x <= 84
+    return 30 <= x <= 45
 
 def q(x):
-    return 4 <= x <= 51
+    return 40 <= x <= 55
 
 def a(start, stop, x):
     return start <= x <= stop
 
 
+coords = combinations([30, 40, 45, 55], 2)
+
 min_dlina = 10**6
-
-coords = combinations([4, 19, 51, 84], 2)
-
 
 for start, stop in coords:
     flag = True
-    
+
     for x in range(0, 100):
-        if not ((not q(x)) or p(x) or a(start, stop, x)):
+        if (not ((not a(start, stop, x)) <= (not p(x)))) or \
+            (not (q(x) <= a(start, stop, x))):
             flag = False
             break
 
     if flag:
         min_dlina = min(min_dlina, stop - start)
 
-print(min_dlina)
 
-            
-            
+print(min_dlina)

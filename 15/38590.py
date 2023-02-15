@@ -14,7 +14,6 @@ min_dlina = 10**6
 
 coords = combinations([17, 29, 58, 80], 2)
 
-
 for start, stop in coords:
     flag = True
     
@@ -23,7 +22,7 @@ for start, stop in coords:
             flag = False
             break
 
-    if (stop - start) < min_dlina:
-        min_dlina = stop - start
+    if flag:
+        min_dlina = min(min_dlina, stop - start)
 
 print(min_dlina)
