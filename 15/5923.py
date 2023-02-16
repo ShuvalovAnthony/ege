@@ -12,7 +12,6 @@ def r(x):
 def a(start, stop, x):
     return start <= x <= stop
 
-
 coords = combinations([5, 280, 295,375, 400, 450], 2)
 
 min_dlina = 10**6
