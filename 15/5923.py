@@ -14,7 +14,7 @@ def a(start, stop, x):
 
 coords = combinations([5, 280, 295,375, 400, 450], 2)
 
-min_dlina = 10**6
+dlini = []
 
 for start, stop in coords:
     flag = True
@@ -25,6 +25,6 @@ for start, stop in coords:
             break
 
     if flag:
-        min_dlina = min(min_dlina, stop - start)
+        dlini.append(stop - start)
 
-print(min_dlina)
+print(dlini, min(dlini))

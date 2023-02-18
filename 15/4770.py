@@ -15,7 +15,7 @@ coords = combinations(
     2,
 )
 
-min_dlina = 10**6
+dlini = []
 
 for start, stop in coords:
     flag = True
@@ -27,7 +27,7 @@ for start, stop in coords:
             break
 
     if flag == True:
-        min_dlina = min(min_dlina, stop - start)
+        dlini.append(stop - start)
 
 
-print(min_dlina)
+print(dlini, min(dlini))
