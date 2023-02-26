@@ -15,7 +15,7 @@ coords = combinations(
     2,
 )
 
-dlini = []
+dlini = [] # ntf
 
 for start, stop in coords:
     flag = True
