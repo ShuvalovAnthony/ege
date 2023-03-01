@@ -10,6 +10,3 @@ def f(a, b, limit=0):
         f(a + 3, b, limit) + f(a*2 + 1, b, limit)
 
 print(f(1, 55))
-
-
-
