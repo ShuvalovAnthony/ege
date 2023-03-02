@@ -1,4 +1,4 @@
-f = open("ege/27__/47231/27_A.txt")
+f = open("27__/47231/27_A.txt")
 
 labs = [tuple(map(int, i.split())) for i in f]
 

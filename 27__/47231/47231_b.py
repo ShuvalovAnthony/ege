@@ -1,4 +1,4 @@
-f = open("ege/27__/47231/27_B.txt")
+f = open("27__/47231/27_B.txt")
 
 
 def conts(np, pp=36):
