@@ -1,5 +1,4 @@
-
-f = open('22/statgrad/data.txt')
+f = open('22/py/6362/6362.txt')
 
 processes = {}
 
@@ -17,8 +16,7 @@ for i in f:
     }
 
 
-for i in processes:
-    print(i, processes[i])
+
 
 for proc_id in processes:
     if not processes[proc_id]['affected_by']:
