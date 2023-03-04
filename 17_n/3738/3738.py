@@ -1,6 +1,6 @@
 f = open('17_n/3738/17_3738.txt')
 
-
+# ПОФИКСИТЬ!!!!
 nums = [int(i) for i in f]
 
 d = {i:0 for i in range(50)}
