@@ -42,5 +42,5 @@ for i in range(1, len(nums) - 1):
 
 new_d = {value: key for key, value in d.items()}
 
-print('Разряды', max(new_d), new_d[max(new_d)])
-print('Каунтер', counter)
+print(max(new_d), new_d[max(new_d)])
+print(counter)
