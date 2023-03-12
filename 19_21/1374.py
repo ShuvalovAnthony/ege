@@ -1,6 +1,5 @@
 # results = []
 
-
 # def f(s1, s2, start_s2=None, step=1): # 1p 2v 3p 4v 5p
 #     if (s1 + s2 >= 107) and step == 3:
 #         if (s1 + s2 <= 170):
@@ -23,8 +22,6 @@
 #     if i[1] == 1:
 #         print(i)
 #         break
-
-
 
 results = []
 
