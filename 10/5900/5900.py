@@ -1,6 +1,6 @@
 f = open('10/5900/5900.txt').read().upper()
 
-znaki_prep = ".,!?:;-_'\""
+znaki_prep = ".,!?:;-_'\"" # \" экранированная последовательность
 
 for i in znaki_prep:
     f = f.replace(i, ' ')
