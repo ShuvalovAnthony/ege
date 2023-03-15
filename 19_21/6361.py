@@ -27,12 +27,12 @@ def f20(s1, s2, step=1): # 1p 2v 3p 4v
         res = []
         for i in range(1, s1 + 1):
             res.append(f20(s1 + i, s2, step + 1))
-        return (s1, s2) if any(res) else None
+        return any(res)
 
     res = []
     for i in range(1, s1 + 1):
         res.append(f20(s1 + i, s2, step + 1))
-    return (s1, s2) if all(res) else None
+    return all(res)
 
 s2_list = []
 
@@ -58,12 +58,12 @@ def f21(s1, s2, step=1): # 1p 2v 3p 4v
         res = []
         for i in range(1, s1 + 1):
             res.append(f21(s1 + i, s2, step + 1))
-        return (s1, s2) if any(res) else None
+        return any(res)
 
     res = []
     for i in range(1, s1 + 1):
         res.append(f21(s1 + i, s2, step + 1))
-    return (s1, s2) if all(res) else None
+    return all(res)
 
 
 for s2 in range(1, 36):
