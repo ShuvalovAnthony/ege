@@ -9,7 +9,7 @@ def check(word):
     for i in range(1, len(word) - 1):
         if word[i] == 'S':
             if word[i - 1] == word[i + 1]: return False
-            
+
     return True
 
 answ = {}

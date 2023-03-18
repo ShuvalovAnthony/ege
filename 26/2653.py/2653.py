@@ -10,7 +10,6 @@ for weight in weights:
     [pos_sum.add(summa + weight) for summa in pos_sum.copy()]
     pos_sum.add(weight)
 
-
 max_impossible_summ = 0
 
 for i in range(sum(weights), 0, -1): # идем от самого большого числа
