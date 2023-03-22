@@ -22,6 +22,7 @@ for start, stop in tmp_nums:
     times.add(stop)
 
 
+
 nums = sorted(nums, key=lambda x: (x[0], x[1]))
 times = sorted(list(times))
 # записать все старты
@@ -29,9 +30,9 @@ times = sorted(list(times))
 # бежать по всем временам
 # писать разницу сколько стартов минус стопов
 
-for i in times:
-    ...
-    
+# for i in times:
+#     ...
+
 
 max_streak = 0
 max_threads = 0

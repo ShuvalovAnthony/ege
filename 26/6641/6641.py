@@ -13,10 +13,10 @@ w_goods, s_goods = sorted(w_goods), sorted(s_goods)
 
 answ = []
 
-for i in range(len(s_goods)): 
-    diff = money - sum(s_goods[:i])
+for i in range(len(w_goods)): # 2 раза запускаем - для s_goods/w_goods
+    diff = money - sum(w_goods[:i])
     if diff < 0:
-        print(i)
+        print(i) # это число - ставим в range для s_goods/w_goods
         break
 
 for s in range(700):
