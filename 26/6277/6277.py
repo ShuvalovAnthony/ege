@@ -18,13 +18,13 @@ for num in nums:
         cache.append(num)
     else: break
 
-print(free_space, len(cache))
+print(free_space)
 
 nums = nums[len(cache)::]
 
 for i in range(len(nums)):
     flag = True
-    cache = sorted(cache, reverse=True)
+    cache = sorted(cache)
     while flag:
         if nums[i] <= max(cache) + free_space:
             flag = False
@@ -34,6 +34,6 @@ for i in range(len(nums)):
                     cache[j] = nums[i]
                     break
         else:
-            free_space += cache.pop(-1)
+            free_space += cache.pop()
     
 print(len(cache))

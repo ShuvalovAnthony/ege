@@ -9,19 +9,15 @@ for i in f:
     if type == 'S': s_goods.append(int(price))
     else: w_goods.append(int(price))
 
-
-
 w_goods, s_goods = sorted(w_goods), sorted(s_goods)
 
 answ = []
-
 
 for i in range(len(s_goods)): 
     diff = money - sum(s_goods[:i])
     if diff < 0:
         print(i)
         break
-
 
 for s in range(700):
     for w in range(700):
