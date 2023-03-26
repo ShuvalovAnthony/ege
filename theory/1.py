@@ -46,12 +46,11 @@
 
 
 
-goods = [20, 10, 40, 30]
+# goods = [20, 10, 40, 30]
 
-for i in sorted(goods): # 20          10 40 30 -> 10 20 30 40
+# for i in sorted(goods): # 20          10 40 30 -> 10 20 30 40
         
-    print(i)
-
+#     print(i)
 
 
 
