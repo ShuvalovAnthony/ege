@@ -22,7 +22,6 @@ for start, stop in tmp_nums:
     times.add(stop)
 
 
-
 nums = sorted(nums, key=lambda x: (x[0], x[1]))
 times = sorted(list(times))
 # записать все старты
@@ -40,6 +39,6 @@ max_threads = 0
 tmp_threads = 0
 tmp_streak = 0
 
-print("SFD")
+print(len(times))
 
 # for start, stop in nums:
