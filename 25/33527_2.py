@@ -1,3 +1,4 @@
+# slow!!
 def chet_delit(n):
     deliteli = []
     for i in range(2, n + 1):
@@ -9,7 +10,7 @@ def chet_delit(n):
     return False
 
 
-for i in range(100, 150):
+for i in range(101000000, 102000000):
     if chet_delit(i): print(chet_delit(i), i)
 
 

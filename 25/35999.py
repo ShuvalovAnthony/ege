@@ -1,7 +1,7 @@
 nums = []
 
-for m in range(0, 31, 2):
-    for n in range(1, 31, 2):
+for m in range(0, 31, 2): # m четное!!!!
+    for n in range(1, 31, 2): # n - нечетное!!!
         nums.append((2**m)*(3**n))
 
 
