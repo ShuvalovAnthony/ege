@@ -1,3 +1,5 @@
+from array import array
+
 f = open('26/stat/stat.txt')
 
 n = int(f.readline())
