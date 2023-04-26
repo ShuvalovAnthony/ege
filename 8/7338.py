@@ -17,7 +17,7 @@
 from itertools import product
 count = 0
 
-for i in product('КАТЕР', 'КАТЕР', 'КАТЕР', 'КАТЕР', 'КАТЕР', 'КАТЕР'):
+for i in product('КАТЕР', repeat=6):
     if i[0] == 'Р' and i[-1] == 'К':
         count += 1
 
