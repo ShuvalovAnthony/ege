@@ -1,12 +1,13 @@
 f = open('26/7826/26_7826.txt')
 
-k, n = [int(i) for i in f.readline().split()]
+k, n = [int(i) for i in f.readline().split()] # k - колво аттракционов
 
-visitors = sorted([list(map(int, i.split())) for i in f],  key=lambda x: (x[0], -x[1]))
+visitors = sorted(
+    [list(map(int, i.split())) for i in f],
+    key=lambda x: (x[0], -x[1])
+    )
 
-current_time = 0
-
-stops = [-1]*k
+stops = [-1]*k # время когда освободится аттракцион
 visitors_counter = 0
 
 last_attrs_number = 0
@@ -21,7 +22,7 @@ for start, stop in visitors:
         if start >= stops[attr_index]:
             visitors_counter += 1
             stops[attr_index] = stop + 1
-            last_attrs_number = attr_index + 1
+            last_attrs_number = attr_index + 1 # тк отсчет в человеческих координатах
             last_start = start
             break
 
