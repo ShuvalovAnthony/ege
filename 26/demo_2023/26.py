@@ -26,9 +26,8 @@ for i in range(len(users_data)): # бежим по всем архивам
 
 print('свободное место', s)
 print(len(saved), saved[-1])
-print(saved)
 print('-----')
-print(users_data)
+print(users_data[-10::])
 
 
 
