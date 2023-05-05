@@ -1,9 +1,7 @@
-f = open('17_n/6360/17_6360.txt')
+f = open('17/6360/17_6360.txt')
 
 
 nums = [int(i) for i in f]
-
-
 
 min_num_end_with_7 = -1
 
