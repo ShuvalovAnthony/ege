@@ -6,9 +6,9 @@ f = f.replace('N', ' ')\
     .replace('P', ' ')
 
 
-for i in range(100, 1, -1):
-    f = f.replace(' '*i, '  ')
 
-print(max(
-    [len(i) for i in f.split('  ')]
-))
+print(
+    max(
+    [len(i.strip()) for i in f.split('  ')]
+) + 2
+)
