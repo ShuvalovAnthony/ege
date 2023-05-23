@@ -7,12 +7,12 @@ nums = [int(i) for i in f]
 
 max_na_8 = -10001
 
-for i in nums:
+for num in nums:
     if (
-        i%118 == 0 and
-        i%10 != 8 # str(i)[-1] == '8'
+        num%118 == 0 and
+        num%10 != 8 # str(i)[-1] == '8'
     ):
-        max_na_8 = max(max_na_8, i)
+        max_na_8 = max(max_na_8, num)
 
 
 def check(num1, num2, num3):
@@ -35,7 +35,7 @@ counter = 0
 kv_max_summi = -1
 
 
-for i in range(len(nums) - 3):
+for i in range(len(nums) - 2):
     for j in range(i + 1, i + 2):
         for k in range(i + 2, i + 3):
             if check(nums[i], nums[j], nums[k]):
