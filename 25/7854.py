@@ -20,9 +20,7 @@ for i in range(1, 7):
         if simple(p) and\
             num%((p + 2)**3) == 0 and\
             p:
-            try: answ[p]
-            except: answ[p] = num
-
+            if p not in answ: answ[p] = num
 
 for i in answ:
     print(answ[i], i)
