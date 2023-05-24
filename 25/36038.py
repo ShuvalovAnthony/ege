@@ -15,5 +15,5 @@ for i in range(452021 + 1, 10**12):
         if m%7 == 3:
             print(i, m)
             counter -= 1
-    if not counter:
+    if counter == 0:
         break
