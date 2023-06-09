@@ -45,6 +45,15 @@ def razlozh_na_prostie(n:int):
         result += str(key) + '^' + str(value) + ' * '
     return result
 
+# разложение на простые множители
+def kolvo_prost_mnpzh(n:int):
+    prostie = prime_mnozh(n)[1::]
+    count = 0
+    for i in prostie:
+        while (n%i == 0):
+            n //= i
+            count += 1  
+    return count
 
 
     
