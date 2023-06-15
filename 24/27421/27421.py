@@ -1,4 +1,4 @@
-f = open('ege/24/27421/24_demo.txt').readline()
+f = open('24/27421/24_demo.txt').readline()
 
 
 max_dlina = 0
