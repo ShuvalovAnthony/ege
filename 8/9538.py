@@ -25,8 +25,12 @@ for i in range(1, 10**6):
     while start > 0:
         num.append(start%15)
         start //= 15
+
+
+
     if len(num) == 5:
         counter += check(num)
 
 
 print(counter)
+
