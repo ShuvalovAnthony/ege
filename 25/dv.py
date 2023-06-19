@@ -3,8 +3,8 @@ from fnmatch import fnmatch
 
 def check(num):
     kolvo_delitelei = 0
-    for i in range(1, num + 1):
-        if num%i == 0: kolvo_delitelei += 1
+    for i in range(1, int(num**0.5) + 1):
+        if num%i == 0: kolvo_delitelei += 2
     for stepen_dvoiki in range(31):
         if 2**stepen_dvoiki == kolvo_delitelei: return True
     return False
