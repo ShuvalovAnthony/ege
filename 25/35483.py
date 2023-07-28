@@ -13,6 +13,8 @@ def del_na_2(n):
 
 for i in range(35000000, 40000000 + 1):
     tmp = del_na_2(i)
-    if (tmp**0.25) == int(tmp**0.25):
-        if prime(tmp**0.25):
-            print(i)
+    if (
+        (tmp**0.25) == int(tmp**0.25) and
+        prime(tmp**0.25)
+    ):
+        print(i)

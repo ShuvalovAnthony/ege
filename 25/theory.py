@@ -54,6 +54,4 @@ def kolvo_prost_mnpzh(n:int):
             n //= i
             count += 1  
     return count
-
-
-    
+x
