@@ -1,4 +1,4 @@
-f = open('ege/17/45251/107_17.txt')
+f = open('17/45251/107_17.txt')
 
 
 nums = [int(i) for i in f]
@@ -11,6 +11,7 @@ for i in nums:
 
 counter = 0
 max_sum = -10**6
+
 
 
 for i in range(len(nums) - 1):
