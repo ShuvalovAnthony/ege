@@ -1,7 +1,7 @@
-def f(a, b): # a - входное число b - конечное
-    if a > b: return 0
-    elif a == b: return 1
-    return f(a + 2, b) + f(a*5, b)
+def f(start, stop): # start - входное число stop - конечное
+    if (start > stop): return 0
+    elif start == stop: return 1
+    return f(start + 2, stop) + f(start*5, stop)
 
 
 print(f(2, 50))
