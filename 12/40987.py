@@ -1,7 +1,5 @@
 min_kolvo_edinic = 10**6
 
-
-
 for kolvo_edinic in range(200, 1000):
     s = '1'*kolvo_edinic
 
