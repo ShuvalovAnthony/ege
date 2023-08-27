@@ -1,7 +1,6 @@
-import ipaddress
+from ipaddress import IPv4Network
 
-network_address = ipaddress.IPv4Network('192.168.32.160/255.255.255.240')
-
+network_address = IPv4Network('192.168.32.160/255.255.255.240')
 
 count = 0
 for ip in network_address:
