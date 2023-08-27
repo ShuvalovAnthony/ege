@@ -6,8 +6,6 @@ from itertools import *
 def f(a, b, c, d):
     return ((a and b) == (not c)) and (b <= d)
 
-
-
 t = [
     (1, 0, 0, 0),
     (1, 0, 1, 0),
