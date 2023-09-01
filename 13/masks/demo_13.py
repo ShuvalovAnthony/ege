@@ -2,7 +2,6 @@ import ipaddress
 
 adresses = ipaddress.IPv4Network('192.168.32.160/255.255.255.240')
 
-
 counter = 0
 
 for adress in adresses:
