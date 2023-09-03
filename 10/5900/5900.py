@@ -1,8 +1,8 @@
+from string import punctuation
+
 f = open('10/5900/5900.txt').read().upper()
 
-znaki_prep = ".,!?:;-_'\"" # \" экранированная последовательность
-
-for i in znaki_prep:
+for i in punctuation:
     f = f.replace(i, ' ')
 
 slova = f.split()
