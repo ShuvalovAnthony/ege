@@ -7,8 +7,8 @@ res = set()
 for x in alph:
     for y in range(2, 32):
         try:
-            num = int('5' + x + alph[y] + 'a', 18) +\
-            int('18' + x + '7', y)
+            num = int('5' + x + alph[y] + 'c', 16) +\
+            int('8' + x + x + '7', y)
             res.add(num)
         except:
             ...
