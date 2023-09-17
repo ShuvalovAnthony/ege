@@ -9,6 +9,6 @@ for i in range(len(f) - 1):
     if f[i] == 'E': res += f[i + 1]
 
 
-answ_dict = {v:k for k, v in dict(Counter(res)).items()}
 
-print(answ_dict[max(answ_dict)])
+
+print(Counter(res).most_common(1))
