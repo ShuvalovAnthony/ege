@@ -4,12 +4,9 @@ f = open('24/33494/24.txt').readline()
 
 counter = {i: 0 for i in ascii_uppercase}
 
-
-
 for i in range(len(f) - 1):
     if f[i] == 'E':
         counter[f[i+1]] += 1
-
 
 max_freq_letter = 0
 answ_letter = ''
