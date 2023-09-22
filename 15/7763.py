@@ -10,22 +10,22 @@ def a(start, stop, x):
     return start < x < stop
 
 
-coords = combinations([5, 14, 23, 30], 2)
+coords = combinations(
+    sorted([5, 30, 14, 23]), 2)
 
-max_dlina = -1
+dlini = set()
 
 for start, stop in coords:
     flag = True
-    
     for x in range(0, 100):
         if not (((p(x)) == (q(x))) <= (not (a(start, stop, x)))):
             flag = False
             break
 
     if flag:
-        max_dlina = max(max_dlina, stop - start)
+        dlini.add(stop - start)
 
 
-print(max_dlina)
+print(dlini, max(dlini))
 
 
