@@ -1,3 +1,6 @@
+from itertools import combinations
+
+
 def p(x):
     return 69 <= x <= 91
 
@@ -10,23 +13,24 @@ def a(start, stop, x):
     return start <= x <= stop
 
 
-answ = 10**6
+coords = combinations(
+    sorted([69, 91, 77, 114]), 2
+)
+
+dlini = set()
 # ¬P ∨ ¬(P ≡ Q) ∨ ¬Q ∨ A
 
 
-for start in range(-150, 150):
-    for stop in range(-150, 150):
-        flag = True
-        for x in range(-150, 150):
-            if not ((not p(x)) or (p(x) != q(x)) or (not q(x)) or a(start, stop, x)):
-                flag = False
-                break
-        
-        if flag:
-            if abs(start - stop) < answ:
-                answ = abs(start - stop)
-                res = (start, stop)
+for start, stop in coords:
+    flag = True
+    for x in range(-150, 150):
+        if not ((not p(x)) or (p(x) != q(x)) or (not q(x)) or a(start, stop, x)):
+            flag = False
+            break
+    
+    if flag:
+        dlini.add(stop - start)
 
-print(answ, res)
+print(dlini, min(dlini))
 
 
