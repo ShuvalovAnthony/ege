@@ -12,7 +12,6 @@ counter = 0
 
 for i in range(1, 5*10**8 + 1):
     if f(i) == 3: counter += 1
-    print(i)
 
 
 print(counter)
