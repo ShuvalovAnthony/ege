@@ -2,15 +2,15 @@ from string import digits, ascii_lowercase
 
 alph = digits + ascii_lowercase[:8]
 
-res = set()
+result = set()
 
 for x in alph:
     for y in range(2, 32):
         try:
-            num = int('5' + x + alph[y] + 'a', 18) +\
+            res = int('5' + x + alph[y] + 'a', 18) +\
             int('18' + x + '7', y)
-            res.add(num)
+            result.add(res)
         except:
-            ...
+            pass
 
-print(len(res))
+print(len(result))
