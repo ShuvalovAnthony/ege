@@ -9,5 +9,3 @@ network = IPv4Network(str(ip_address) + '/' + str(subnet_mask), strict=False)
 
 
 ordinal_number = int(ip_address) - int(network.network_address)
-
-print(ordinal_number)

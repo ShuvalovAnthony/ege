@@ -1,12 +1,7 @@
-from functools import lru_cache
-
-
-@lru_cache
 def sum_digit(n):
     return sum(int(i) for i in str(n))
 
 
-@lru_cache
 def f(n):
     n_bin = bin(n)[2:]
     for i in range(3):
@@ -16,12 +11,12 @@ def f(n):
 
 
 
-# for n in range(25*10**7, 0, -1):
-#     if 123456789 <= f(n) <= 1987654321:
+# for n in range(15432099, 15432099+1000):
+#     if 123456789 <= f(n) <= 1987654321: #  
 #         print(n)
-#         break
+        # break
     
-#     if n%1000000 == 0: print(n)
+    # if n%10**6 == 0: print(n)
 
 
 start = 15432099
