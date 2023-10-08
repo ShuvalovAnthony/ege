@@ -9,9 +9,3 @@ network = IPv4Network(str(ip_address) + '/' + str(subnet_mask), strict=False)
 
 
 ordinal_number = int(ip_address) - int(network.network_address)
-
-
-txt = input('введите текст ')
-
-if txt.islower:
-    print('В тексте есть большие буквы')
