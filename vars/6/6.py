@@ -79,7 +79,7 @@ from collections import Counter
 
 # print(s)
 
-# 13
+# 13 - 16
 # counter = 0
 # for addr in IPv4Network('184.178.54.144/255.255.255.240'):
 #     bin_addr = bin(int(addr))[2:]
