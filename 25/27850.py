@@ -8,5 +8,6 @@ def simple(num: int):
 nomer = 1
 
 for i in range(245690, 245757):
-    if simple(i): print(nomer, simple(i))
+    if simple(i):
+        print(nomer, simple(i))
     nomer += 1
