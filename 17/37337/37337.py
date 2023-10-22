@@ -22,5 +22,5 @@ for i in range(len(nums) - 1):
                 max_summa = nums[i] + nums[j]
 
             # max_summa = max(max_summa, nums[i] + nums[j])
-            
+
 print(counter, max_summa)
