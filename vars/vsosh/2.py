@@ -5,7 +5,7 @@ n = int(input())
 k = int(input())
 
 
-coord = math.log(n, 2)
+coord = int(math.log(n, 2))
 if n == k:
     print(k)
 else:
