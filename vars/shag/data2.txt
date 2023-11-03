@@ -1,0 +1,6 @@
+5
+Moscow|Saint-Petersburg
+Irkutsk|Moscow
+Vladivostok|Novosibirsk
+Yakutsk|Vladivostok
+Anapa|Krasnodar

@@ -1,0 +1,5 @@
+4
+Moscow|Saint-Petersburg
+Vladivostok|Novosibirsk
+Irkutsk|Khabarovsk
+Irkutsk|Moscow
