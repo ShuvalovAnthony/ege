@@ -15,4 +15,4 @@ def delit(num: int):
 
 for i in range(174457, 174506):
     if delit(i):
-        print(delit(i))
+        print(*delit(i))
