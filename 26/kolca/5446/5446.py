@@ -16,9 +16,6 @@ max_count = 0
 max_diameter = 0
 
 
-# uniq_data[i][0] - D
-# uniq_data[i][1] - d
-
 for i in range(len(uniq_data)):
     temp_count = 1
 
@@ -26,12 +23,12 @@ for i in range(len(uniq_data)):
     last_vnesh = vnutr_dVnesh
 
     for j in range(i + 1, len(uniq_data)):
-        vnesh_dV = uniq_data[j][0] # внешний D внешний трубы
-        vnesh_dv = uniq_data[j][1] # внутренний
+        vnesh_dVnesh = uniq_data[j][0] # внешний D внешний трубы
+        vnesh_dvnutr = uniq_data[j][1] # внутренний
 
-        if vnesh_dv >= last_vnesh + 3:
+        if vnesh_dvnutr >= last_vnesh + 3:
             temp_count += 1
-            last_vnesh = vnesh_dV
+            last_vnesh = vnesh_dVnesh
 
     
     if temp_count >= max_count:
