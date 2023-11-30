@@ -10,6 +10,7 @@ for n in range(1, 10**6):
         n += str(summa_cifr%2)
 
     r = int(n, 2)
+    
     if r > 77:
         print(start_n)
         break
