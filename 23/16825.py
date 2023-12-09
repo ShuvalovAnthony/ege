@@ -5,3 +5,7 @@ def f(a, b):
 
 
 print(f(3, 16))
+
+import sys
+
+sys.setrecursionlimit(5000)
