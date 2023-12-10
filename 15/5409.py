@@ -1,8 +1,9 @@
 counter = 0
 
-for a in range(1, 10**6):
-    for x in range(1, 10**6):
-        flag = True
+for a in range(1, 10**3):
+    flag = True
+
+    for x in range(1, 10**3):
         if not (
             (a%25 == 0) and
             (
@@ -11,6 +12,7 @@ for a in range(1, 10**6):
         ):
             flag = False
             break
+
     if flag:
         counter += 1
     
