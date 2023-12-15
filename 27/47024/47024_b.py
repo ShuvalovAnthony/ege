@@ -1,4 +1,4 @@
-f = open("ege/27__/47024/27-B.txt")
+f = open("27/47024/27-B.txt")
 
 
 nums = [int(i) for i in f]

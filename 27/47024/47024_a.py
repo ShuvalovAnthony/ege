@@ -1,4 +1,4 @@
-f = open('ege/27__/47024/27-A.txt')
+f = open('27/47024/27-A.txt')
 
 nums = []
 
@@ -19,3 +19,13 @@ for i in range(len(nums)):
             counter += 1
 
 print(counter)
+
+# способ 2
+# counter = 0
+
+# for i in range(len(nums)):
+#     for j in range(i + 1, len(nums) + 1):
+#         if sum(nums[i:j])%1111 == 0:
+#             counter += 1
+
+# print(counter)
