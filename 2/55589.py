@@ -22,21 +22,3 @@ for a in product([0, 1], repeat=5): #repeat = сколько пропусков 
             ): # результат функции F сверху вниз
                 print(''.join(p))
 
-
-
-
-# print('x', 'y', 'z', 'w')
-
-
-# for x in (0, 1):
-#     for y in (0, 1):
-#         for z in (0, 1):
-#             for w in (0, 1):
-#                 if (
-#                     (not ((x <= y) and ((not w) == z)))
-#                 ):
-#                     print(x, y, z, w,  ((x <= y) == (w or (not z))))
-
-
-
-# # xzyw
