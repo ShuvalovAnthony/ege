@@ -1,6 +1,5 @@
 f = open("27/47231/27_B.txt")
 
-
 def conts(np, pp=36):
     """np - колво пробирок, pp - пробирок в контейнере"""
     return np//pp + 1*bool(np%pp)
@@ -15,8 +14,6 @@ for i in f:
     labs.append((coord, cont))
     current_summa += (coord - 1)*cont # 1 - координата первого центра ИЗ ФАЙЛА
     cont_count += cont
-
-
 
 cont_l = 0
 cont_r = cont_count - 3 # 3 - колво контейнеров в первом пункте из файла
