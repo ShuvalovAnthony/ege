@@ -1,4 +1,4 @@
-f = open('ege/27__/35916/b.txt')
+f = open('27/35916/b.txt')
 
 nums = sorted([int(i) for i in f])
 # nums = [int(i) for i in f]

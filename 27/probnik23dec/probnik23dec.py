@@ -1,11 +1,26 @@
-# file - B
-f = open("27/probnik23dec/27-B_12257.txt")
+# # file - B
+# f = open("27/probnik23dec/27-B_12257.txt")
 
-nums_len = f.readline()
-nums = [int(i) for i in f]
+# nums_len = int(f.readline())
+# nums = [int(i) for i in f]
+# lefts = [0 for i in range(nums_len)]
 
 
-# print(nums)
+# count = 0
+# sumi = 0
+
+# for i in range(1, len(nums)):
+#     num = nums[i]
+#     sumi += num
+
+#     if sumi % 113 == 0:
+#         count = count + 1
+    
+#     count += lefts[sumi % 113]
+#     lefts[sumi % 113] += 1
+
+
+# print(count)
 
 
 

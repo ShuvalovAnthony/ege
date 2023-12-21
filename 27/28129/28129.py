@@ -25,7 +25,7 @@ startTime = datetime.now()
 
 
 
-f = open('ege/27__/28129/28129_B.txt')
+f = open('27/28129/28129_B.txt')
 s = f.readlines()
 m71 = 0
 m72 = 0
