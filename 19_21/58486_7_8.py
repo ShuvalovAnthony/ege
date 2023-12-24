@@ -35,7 +35,6 @@ def f20(h1, h2, step=1):
         ((h1 >= 48) or (h2 >= 48)) and (step < 4)
     ): return False
 
-
     if h1 < h2: h1, h2 = h2, h1
 
     if step%2 == 0:
