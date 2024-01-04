@@ -15,7 +15,8 @@ def check(stroka: str):
 for kolvo_edinic in range(1, 50):
     for kolvo_dvoek in range(1, 50):
         for kolvo_troek in range(1, 50):
-            stroka = '0' + '1'*kolvo_edinic + '2'*kolvo_dvoek + '3'*kolvo_troek + '0'
+            stroka = '0' + '1'*kolvo_edinic +\
+                  '2'*kolvo_dvoek + '3'*kolvo_troek + '0'
             if check(
                 algo(stroka)
             ):
