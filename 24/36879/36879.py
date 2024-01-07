@@ -1,3 +1,6 @@
+import string
+
+
 f = open('24/36879/inf_26_04_21_24.txt')
 
 stroki = []
@@ -8,7 +11,6 @@ for i in f:
 
 
 def max_rasst(stroka):
-    import string
     max_rasst = 0
     for i in string.ascii_uppercase:
         if stroka.count(i) >= 2:
