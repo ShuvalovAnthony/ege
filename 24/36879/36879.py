@@ -17,6 +17,10 @@ def max_rasst(stroka):
             max_rasst = max(max_rasst, last - first)
     return max_rasst
 
+dlini = []
 
 for stroka in stroki:
-    print(max_rasst(stroka))
+    dlini.append(max_rasst(stroka))
+
+
+print(max(dlini))
