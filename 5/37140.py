@@ -1,4 +1,4 @@
-a = []
+result = []
 
 for n in range(1, 100):
     n_bin = bin(n)[2:] # перевод в двоичную систему
@@ -11,6 +11,6 @@ for n in range(1, 100):
     r = int(n_bin, 2)
 
     if r > 52:
-        a.append(r)
+        result.append(r)
 
-print(min(a))
+print(min(result))
