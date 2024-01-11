@@ -18,3 +18,5 @@ counter = 0
 
 for row in nums:
     counter += check(row)
+
+print(counter)
