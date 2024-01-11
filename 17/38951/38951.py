@@ -1,4 +1,4 @@
-f = open('ege/17/38951/17.txt')
+f = open('17/38951/17.txt')
 
 nums = [int(i) for i in f]
 
