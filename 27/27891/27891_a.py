@@ -1,4 +1,4 @@
-f = open("27__/27891/27-A_2.txt")
+f = open("27/27891/27-A_2.txt")
 
 nums = [int(i) for i in f]
 

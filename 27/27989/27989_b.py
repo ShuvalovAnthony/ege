@@ -1,7 +1,6 @@
-f = open('ege/27__/27989/27989_B.txt')
+f = open('27/27989/27989_B.txt')
 
 nums = [int(i) for i in f]
-
 
 
 krat_26 = 0

@@ -1,4 +1,4 @@
-f = open('ege/27__/27989/27989_A.txt')
+f = open('27/27989/27989_B.txt')
 
 nums = [int(i) for i in f]
 
