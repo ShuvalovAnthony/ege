@@ -13,7 +13,6 @@ for n in range(10_000, 2, -25):
 
     summa_cifr = sum([int(i) for i in s])
 
-
     if summa_cifr == 1685:
         print('otvet', n)
         break
