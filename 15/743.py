@@ -4,7 +4,7 @@ sets_a = []
 default_set = {1, 3, 5, 6, 7, 9, 11, 12}
 
 
-for i in range(len(default_set)):
+for i in range(len(default_set) + 1):
     sets_a += (list(combinations(default_set, i)))
 
 
