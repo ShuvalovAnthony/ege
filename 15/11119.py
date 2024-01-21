@@ -39,4 +39,3 @@ for start, stop in coords:
 
 
 print(dlini_otrezkov, min(dlini_otrezkov))
-
