@@ -19,7 +19,6 @@ for i in range(len(f) - 1):
 max_dlina = 0
 
 for i in range(len(dlini) - 99):
-    print(sum(dlini[i:i + 99]))
     max_dlina = max(
         max_dlina,
         sum(dlini[i:i + 99])
