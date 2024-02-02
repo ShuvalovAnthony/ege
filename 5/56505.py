@@ -11,16 +11,22 @@ def f(n):
 
 
 
-# for n in range(15432099, 15432099+1000):
-#     if 123456789 <= f(n) <= 1987654321: #  
-#         print(n)
-        # break
-    
-    # if n%10**6 == 0: print(n)
+for n in range(15432099, 15432099+1000):
+    if 123456789 <= f(n) <= 1987654321: #  
+        start = n
+        break
 
 
-start = 15432099
-stop = 248456789
+for n in range(248456789, 248456789-1000, -1):
+    if 123456789 <= f(n) <= 1987654321: #  
+        stop = n
+        break
+
+
+
+for i in range(start, stop + 1):
+    if 123456789 <= f(n) <= 1987654321:
+        print(i)
 
 
 print(stop - start + 1)
