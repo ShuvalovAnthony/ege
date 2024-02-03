@@ -1,6 +1,7 @@
 from ipaddress import IPv4Address
 from itertools import permutations
 
+
 def check(ip_str):
     try:
         IPv4Address(ip_str)
