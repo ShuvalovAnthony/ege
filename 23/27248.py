@@ -21,7 +21,8 @@
 res = [1]
 
 for i in range(5):
-    for num in res.copy():
+    res_copy = res.copy()
+    for num in res_copy:
         res.append(num + 1)
         res.append(num * 2)
 
