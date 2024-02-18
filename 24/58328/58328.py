@@ -13,5 +13,3 @@ print(
         [len(i) for i in f.split()]
     ) + 2
 )
-    
-
