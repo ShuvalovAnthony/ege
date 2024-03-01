@@ -11,7 +11,7 @@ def del_na_2(n):
     return n
 
 
-for i in range(45*10**6, 50*10**6 + 1):
+for i in range(45*10**6, 50*10**6 + 1   ):
     tmp = del_na_2(i)
 
     if ((tmp**0.25) == int(tmp**0.25)) and prime(tmp**0.25):
