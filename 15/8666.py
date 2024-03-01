@@ -18,7 +18,9 @@ for start, stop in coords:
     flag = True
     
     for x in range(0, 100):
-        if not (((not (a(start, stop, x))) <= p(x)) <= (a(start, stop, x) <= q(x))):
+        if not (
+            ((not (a(start, stop, x))) <= p(x)) <= (a(start, stop, x) <= q(x))
+            ):
             flag = False
             break
 
