@@ -58,3 +58,60 @@ def kolvo_prost_mnpzh(n:int):
             n //= i
             count += 1  
     return count
+
+
+
+
+
+# # все делите числа
+# # тривиальные делители - это 1 и само число
+# def deliteli(num):
+#     deliteli = set()
+
+#     for i in range(1, int(num**0.5) + 1): 
+#         if num%i == 0:
+#             deliteli.add(i)
+#             deliteli.add(num//i)
+
+#     return sorted(list(deliteli))
+
+# print(len(deliteli(18385428600)))
+
+
+# def notTriviaDeliteli(num):
+#     deliteli = set()
+
+#     for i in range(2, int(num**0.5)): 
+#         if num%i == 0:
+#             deliteli.add(i)
+#             deliteli.add(num//i)
+
+#     return sorted(list(deliteli))
+
+# print(notTriviaDeliteli(100))
+
+
+
+# # функция, которая проверяет, что у числа 9 нетривиальных делителей
+
+# def check(num):
+#     deliteli = set()
+
+#     for i in range(2, int(num**0.5)):
+#         if num%i == 0:
+#             deliteli.add(i)
+#             deliteli.add(num//i)
+        
+#         # if len(deliteli) > 9: return False
+
+#     if len(deliteli) == 9:
+#         return deliteli
+
+
+# print(check(100))
+
+
+# def prime(num):
+#     for i in range(2, int(num**0.5) + 1):
+#         if num%i == 0: return False
+#     return True
