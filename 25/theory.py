@@ -12,8 +12,7 @@ def all_delit(n:int):
         if n%i == 0:
             deliteli += [i, n//i]
     return sorted(set(deliteli))
-
-
+print(all_delit(999999999999999935))
 # все НЕТРИВИАЛЬНЫЕ (кроме 1 и самого числа) делители числа
 def not_trivial_delit(n:int):
     deliteli = []
