@@ -1,4 +1,4 @@
-f = open('ege/27__/27991/27991_B.txt')
+f = open('27/27991/27991_B.txt')
 
 n = f.readline()
 
