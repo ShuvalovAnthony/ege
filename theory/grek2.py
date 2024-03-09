@@ -1,19 +1,22 @@
-from functools import lru_cache
+import math
 
-primes = []
+N = int(input())
 
-@lru_cache
-def prime(n):
-    for i in range(2, int(n**0.5)):
-        if n%i == 0: return False
-    return True
+ans = 1
+for i in range(1, int(N**0.5) + 1):
+    if N % i == 0:
+        if N // i % i == 0:
+            ans = max(ans, i * i)
+        N2 = N // i
+        lo = 1
+        hi = 1000000000
+        while lo < hi:
+            mi = (lo + hi) >> 1
+            if mi * mi < N2:
+                lo = mi + 1
+            else:
+                hi = mi
+        if lo * lo == N2:
+            ans = max(ans, N2)
 
-
-
-for i in range(3, 10**18 + 1, 2):
-    print(i)
-    if prime(i):
-        primes.append(i)
-
-
-print(primes)
+print(ans)

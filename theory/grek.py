@@ -2,11 +2,6 @@ from decimal import localcontext, Decimal
 
 n = int(input())
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
-
 def rho_factor(n, cache={}):
     if n in cache:
         return cache[n]
@@ -14,22 +9,35 @@ def rho_factor(n, cache={}):
         return []
     if n % 2 == 0:
         return [2] + rho_factor(n // 2)
-    x = 2
-    y = 2
+    
+    def gcd(a, b):
+        while b:
+            a, b = b, a % b
+        return a
+
+    def f(x):
+        return (x**2 + 1) % n
+
+    factors = []
+    x = y = 2
     d = 1
-    f = lambda x: (x**2 + 1) % n
     while d == 1:
-        for _ in range(int(n**0.25)):  # Оптимизированное количество итераций
+        for _ in range(int(n**0.25)):
             x = f(x)
             y = f(f(y))
             d = gcd(abs(x - y), n)
             if d != 1:
                 break
         if d == n or d == 1:
-            return [n]
-    factors = rho_factor(d, cache) + rho_factor(n // d, cache)
+            factors.append(n)
+            break
+        factors.extend(rho_factor(d, cache))
+        factors.extend(rho_factor(n // d, cache))
+        break
+    
     cache[n] = factors
     return factors
+
 
 
 def get_all_divisors(n):
