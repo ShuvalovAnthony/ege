@@ -3,11 +3,8 @@ f = open("24/58329/24_58329.txt").read()
 
 digits = [int(i) for i in f]
 
-
-
 temp_dlina = 0
 max_dlina = 0
-
 
 
 for i in range(len(digits) - 2):
