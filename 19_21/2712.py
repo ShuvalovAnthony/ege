@@ -29,12 +29,12 @@ def f19(s1, s2, step=1): # 1p, 2v, 3p, 4v, 5p
     
     return any(moves)
 
-    
 
 
 for s2 in range(1, 50):
     if f19(24, s2):
         print(s2, f19(24, s2))
+
 
 
 
