@@ -32,4 +32,4 @@ for s in range(700):
                 ]
             )
 
-print(max(answ))
+print(sorted(answ)[-10:])
