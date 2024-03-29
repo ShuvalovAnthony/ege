@@ -1,4 +1,4 @@
-f = open("26/61372/26.txt")
+f = open("26/61406/26.txt")
 
 events = sorted(
     [
@@ -7,6 +7,8 @@ events = sorted(
     key=lambda x: (x[1], x[0])
 )
 
+
+
 last_stop = 0
 last_delta = 0
 
@@ -14,7 +16,7 @@ approvedEvents = []
 
 for i in range(len(events)):
     start, stop = events[i][0], events[i][1]
-    if start > last_stop + 15:
+    if start > last_stop + 20:
         approvedEvents.append(events[i])
         last_stop = stop
     
