@@ -7,10 +7,7 @@ events = sorted(
     key=lambda x: (x[1], x[0])
 )
 
-
-
 last_stop = 0
-last_delta = 0
 
 approvedEvents = []
 
@@ -19,7 +16,7 @@ for i in range(len(events)):
     if start > last_stop + 20:
         approvedEvents.append(events[i])
         last_stop = stop
-    
+
 
 preLastStop = approvedEvents[-2][-1]
 
