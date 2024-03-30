@@ -1,25 +1,25 @@
-# import turtle
+import turtle
 
-# t = turtle.Pen()
+t = turtle.Pen()
+
+turtle.tracer(0)
+
+coords = [(0.00, 0.00)]
+
+def vpered(x: int):
+    for i in range(x):
+        t.fd(1)
+        coords.append(t.pos())
 
 
-# t.speed(0)
-# coords = [(0.00, 0.00)]
+for i in range(4):
+    for j in range(4):
+        vpered(6)
+        t.rt(90)
 
-# def vpered(x: int):
-#     for i in range(x):
-#         t.fd(1)
-#         coords.append(t.pos())
-
-
-# for i in range(4):
-#     for j in range(4):
-#         vpered(6)
-#         t.rt(90)
-
-#     vpered(10)
-#     t.rt(90)
-#     vpered(3)
+    vpered(10)
+    t.rt(90)
+    vpered(3)
 
 # print(coords)
 
