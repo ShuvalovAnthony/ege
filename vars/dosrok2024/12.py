@@ -17,7 +17,6 @@ for n in range(4, 10000):
     resS = algo(s)
     tempSum = summaCifr(resS)
     if tempSum >= maxSum:
-        print(tempSum, resS)
         maxSum = tempSum
 
 print(maxSum)
