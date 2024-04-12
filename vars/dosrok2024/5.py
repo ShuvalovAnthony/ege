@@ -11,7 +11,7 @@
 #     if r == 202:
 #         print(n)
 
-
+results = []
 
 def to3(num: int):
     digits = ''
@@ -26,7 +26,7 @@ def calculateSumCifr(num: int|str):
     return sum([int(i) for i in num])
 
 
-for n in range(1, 10**6):
+for n in range(1, 10**4):
     tri_n = to3(n)
     sumCifr = calculateSumCifr(tri_n)
     if sumCifr%2 == 0:
@@ -37,5 +37,6 @@ for n in range(1, 10**6):
     r = int(tri_n, 3)
 
     if r > 1105:
-        print(r)
-        break
+        results.append(r)
+
+print(min(results))
