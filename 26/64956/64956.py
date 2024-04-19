@@ -9,9 +9,6 @@ clients = sorted([
 key=lambda x: x[0]
 )
 
-# for i in clients:
-#     print(i)
-
 
 # время освобождения окна без учета ожидания
 windows = {
