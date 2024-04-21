@@ -5,9 +5,7 @@ n = int(f.readline())
 
 clients = sorted([
     [int(i) for i in row.split()] for row in f
-],
-key=lambda x: x[0]
-)
+])
 
 
 # время освобождения окна без учета ожидания
