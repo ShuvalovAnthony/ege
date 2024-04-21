@@ -3,13 +3,11 @@ f = open("26/60967/26_59852.txt")
 n = int(f.readline())
 k = int(f.readline())
 
-details = []
-containers = []
 
-for i in range(n + k):
-    if i < n: details.append(int(f.readline()))
-    else: containers.append(int(f.readline()))
-    
+data = [int(i) for i in f]
+details = data[:n]
+containers = data[n:]
+
 
 totalVolume = 0
 count = 0
