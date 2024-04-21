@@ -22,7 +22,7 @@ for i in range(len(events)):
 preLastStop = approvedEvents[-2][-1]
 
 maxDiff = 0
-for start, stop in events:
+for start, stop in approvedEvents:
     maxDiff = max(maxDiff, start - preLastStop)
 
 print(len(approvedEvents), maxDiff)
