@@ -8,7 +8,6 @@ rows = [
 
 
 def check_triangle(triplet):
-    triplet = sorted(triplet)
     return triplet[-1] < triplet[0] + triplet[1]
 
 
