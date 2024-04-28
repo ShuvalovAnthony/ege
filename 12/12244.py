@@ -1,6 +1,6 @@
 otv = []
 
-for n in range(4, 100000):
+for n in range(4, 10000):
     s = '3' + n * '5'
 
     while '333' in s or '555' in s:
@@ -11,6 +11,7 @@ for n in range(4, 100000):
 
     summa = sum([int(i) for i in s])
     
+    print(n)
     otv.append(summa)
 
 
