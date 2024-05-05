@@ -1,14 +1,17 @@
-# (x ∧ ¬y) ∨ (y ≡ z) ∨ ¬w
+from itertools import *
 
-print('x', 'y', 'z', 'w')
-
-
-for x in (0, 1):
-    for y in (0, 1):
-        for z in (0, 1):
-            for w in (0, 1):
-                if not ((x and (not y)) or (y == z) or (not w)):
-                    print(x, y, z, w)
+def f(x, y, w, z):
+    return (x and not y) or (y == z) or not w
 
 
-# 1-w   2-z  3-y 4-x
+for a in product([0, 1], repeat=5):
+    t = [
+        (a[0], 0, a[1], a[2]),
+        (1, 0, a[3], 0),
+        (1, a[4], 0, 0)
+    ]
+
+    if len(t) == len(set(t)):
+        for p in permutations('xywz'):
+            if [f(**dict(zip(p, r))) for r in t] == [0, 0, 0]:
+                print(*p)
