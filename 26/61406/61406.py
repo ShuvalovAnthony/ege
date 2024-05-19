@@ -11,10 +11,9 @@ last_stop = 0
 
 approvedEvents = []
 
-for i in range(len(events)):
-    start, stop = events[i][0], events[i][1]
+for start, stop in events:
     if start > last_stop + 20:
-        approvedEvents.append(events[i])
+        approvedEvents.append([start, stop])
         last_stop = stop
 
 
