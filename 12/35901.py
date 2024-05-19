@@ -27,4 +27,4 @@ for c1 in range(1, 50):
             if s.count('1') == 50 and \
                 s.count('2') == 12 and \
                     s.count('3') == 7:
-                    print(s.count('1'))
+                    print(c1)
