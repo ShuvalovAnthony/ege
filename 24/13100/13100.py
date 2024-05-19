@@ -7,10 +7,8 @@ for i in range(len(f)):
     if (f[i] == 'C') or (f[i] == 'D'): all_indexes.append(i)
 
 
-
 def check_temp(temp_posled):
     return temp_posled.count("C") == temp_posled.count("D")
-
 
 max_dlina = 0
 
@@ -28,4 +26,3 @@ for i in range(len(all_indexes) - 5): # 0    1 2 3 4   5
 
 
 print(max_dlina)
-print(answ, answ.count("C"), answ.count("D"), len(answ))
