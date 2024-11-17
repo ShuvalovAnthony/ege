@@ -13,7 +13,7 @@ def a(start, stop, x):
     return start <= x <= stop
 
 # УМНОЖАЕМ СПИСОК НА 2 чтобы проверить 0ые длины
-coords = combinations(sorted([257, 1000, 5, 100, 99, 258]*2), 2)
+coords = combinations(sorted([257, 1000, 5, 100, 99, 258]), 2)
 
 dlini = []
 
