@@ -4,8 +4,7 @@ import sys
 
 sys.setrecursionlimit(5000)
 
-
-@lru_cache
+@lru_cache(256)
 def f(n):
     if n < 11: return 10
     return n + f(n - 1)
@@ -31,4 +30,3 @@ for n in range(1, 1000 + 1):
 
 
 print(counter)
-
