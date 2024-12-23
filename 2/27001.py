@@ -10,5 +10,4 @@ for a in product([0, 1], repeat=5):
     if len(t) == len(set(t)):
         for p in permutations('xywz'):
             if [f(**dict(zip(p, r))) for r in t] == [1, 1, 1]:
-                for r in t:
-                    print(''.join(p))
+                print(''.join(p))

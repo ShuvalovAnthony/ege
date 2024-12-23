@@ -13,4 +13,5 @@ for x in alph:
         except:
             ...
 
+print(res)
 print(len(res))
