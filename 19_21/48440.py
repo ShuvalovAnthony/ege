@@ -21,6 +21,6 @@ def f19(s, step=1):  # 1p 2v 3p 4v 5p
 
 
 for s in range(1, 101 + 1):
-    if f19(s):
+    if f19(s) and s%3:
         print(s)
         break
