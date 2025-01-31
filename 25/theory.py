@@ -12,7 +12,7 @@ def all_delit(n:int):
         if n%i == 0:
             deliteli += [i, n//i]
     return sorted(set(deliteli))
-print(all_delit(999999999999999935))
+# print(all_delit(999999999999999935))
 # все НЕТРИВИАЛЬНЫЕ (кроме 1 и самого числа) делители числа
 def not_trivial_delit(n:int):
     deliteli = []
@@ -47,6 +47,7 @@ def razlozh_na_prostie(n:int):
         result += str(key) + '^' + str(value) + ' * '
     return result
 
+print(razlozh_na_prostie(243423432))
 
 # разложение на простые множители
 def kolvo_prost_mnpzh(n:int):

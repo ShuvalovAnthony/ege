@@ -1,8 +1,8 @@
 nums = []
 
-for st2 in range(0, 31, 2):
-    for st3 in range(1, 31, 2):
-        nums.append((2**st2)*(3**st3))
+for m in range(0, 31, 2):
+    for n in range(1, 31, 2):
+        nums.append((2**m)*(3**n))
 
 
 # print(nums)
