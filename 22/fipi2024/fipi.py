@@ -1,6 +1,6 @@
 from itertools import product
 
-f = open("22/fipi2024/fipi.txt")
+f = open("ege/22/fipi2024/fipi.txt")
 
 
 rawData = [
@@ -41,7 +41,7 @@ def findMaxTime(data):
 findMaxTime(cookData(rawData))
 maxTime = 0
 
-for t1, t2, t9, t10 in product(range(30), repeat=4):
+for t1, t2, t9, t10 in product(range(20), repeat=4):
     rawData[0][-1] = t1
     rawData[1][-1] = t2
     rawData[8][-1] = t9

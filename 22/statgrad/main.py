@@ -1,5 +1,5 @@
 
-f = open('22/statgrad/data.txt')
+f = open('ege/22/statgrad/data.txt')
 
 processes = {}
 
