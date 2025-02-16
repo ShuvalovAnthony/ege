@@ -1,4 +1,4 @@
-f = open("26/64956/26.txt")
+f = open("ege/26/64956/26.txt")
 
 n = int(f.readline())
 
