@@ -12,7 +12,6 @@ res = {
 }
 
 
-
 for start, stop in data:
     if start < 15*60*60: start = 15*60*60
     if stop > 21*60*60: stop = 21*60*60
