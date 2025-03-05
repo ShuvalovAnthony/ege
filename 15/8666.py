@@ -7,12 +7,12 @@ def q(x):
     return 32 <= x <= 47
 
 def a(start, stop, x):
-    return start < x < stop
+    return start <= x <= stop
 
 
 coords = combinations([25, 32, 47, 50], 2)
 
-max_dlina = -1
+dlini = []
 
 for start, stop in coords:
     flag = True
@@ -25,9 +25,9 @@ for start, stop in coords:
             break
 
     if flag:
-        max_dlina = max(max_dlina, stop - start)
+        max_dlina = dlini.append(stop - start)
 
-
-print(max_dlina)
+print(dlini)
+print(max(dlini))
 
 
