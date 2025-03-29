@@ -18,3 +18,4 @@ fact = sum(prices) - sum(prices[2::3])
 
 
 print(plan, fact)
+

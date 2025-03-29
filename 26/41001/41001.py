@@ -1,7 +1,7 @@
 from time import time
 
 
-f = open('26/41001/26.txt')
+f = open('ege/26/41001/26.txt')
 
 n = int(f.readline())
 
