@@ -12,13 +12,17 @@ def a(start, stop, x):
 
 min_dlina = 10**6
 
-coords = combinations([17, 29, 58, 80], 2)
+coords = combinations(sorted([17, 29, 58, 80]), 2)
+
+
 
 for start, stop in coords:
     flag = True
     
     for x in range(0, 100):
-        if not (d(x) <= (((not c(x)) and (not a(start, stop, x))) <= (not d(x)))):
+        if not (
+            d(x) <= (((not c(x)) and (not a(start, stop, x))) <= (not d(x)))
+            ):
             flag = False
             break
 
