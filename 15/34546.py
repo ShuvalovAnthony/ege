@@ -16,7 +16,16 @@ for start in range(-100, 100):
         flag = True
 # ((x ∈ P) ∨ (x ∈ А)) → ((x ∈ Q) ∨ (x ∈ А))
         for x in range(-100, 100):
-            if not ((p(x) or a(start, stop, x)) <= (q(x) or a(start, stop, x))):
+            if not (
+                    (  
+                        p(x) or
+                        a(start, stop, x)
+                    ) <= 
+                    (
+                        q(x) or
+                        a(start, stop, x)
+                    )
+                ):
                 flag = False
                 break
 
