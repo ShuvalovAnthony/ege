@@ -7,7 +7,7 @@ f = open("ege/24/21161/24_21161.txt").read()
 pattern = r'([ABC][abc]*(?: [ABCabc][abc]*)*\.)'
 
 words = findall(pattern, f)
-
+print([i for i in words if len(i) > 20])
 # print(words)
 print(max([len(i) for i in words]))
 
