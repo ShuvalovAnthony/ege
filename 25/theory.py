@@ -48,7 +48,7 @@ def razlozh_na_prostie(n:int):
         result += str(key) + '^' + str(value) + ' * '
     return result
 
-print(razlozh_na_prostie(243423432))
+print(razlozh_na_prostie(140079456))
 
 # разложение на простые множители
 def kolvo_prost_mnpzh(n:int):
