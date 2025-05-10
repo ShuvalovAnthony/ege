@@ -29,7 +29,7 @@ def f(n):
 s = 10e4 * 7 + 1
 k = 0
 while True:
-    if k >= 1000:
+    if k >= 5:
         break
     q = f(s)
     if not q:
@@ -38,7 +38,7 @@ while True:
     m = min(q) + max(q)
     if m % 10 == 8:
         k += 1
-        # print(int(s), int(m))
+        print(int(s), int(m))
     s += 1
 
 
