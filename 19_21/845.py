@@ -4,7 +4,7 @@ def f(s, step=1): # 1p 2v 3p 4v 5p
     if s >= 36 and s <= 60:
         if step == 3: return 1
         else: return 0
-    elif s >= 36 and s > 60:
+    elif s > 60:
         if step == 2: return 1
         else: return 0
     
@@ -22,13 +22,14 @@ for s in range(1, 100):
     if f(s):
         print(s)
 
+print()
 
 
 def f(s, step=1): # 1p 2v 3p 4v 5p
     if s >= 36 and s <= 60:
         if step == 4: return 1
         else: return 0
-    elif s >= 36 and s > 60:
+    elif s > 60:
         if step == 3: return 1
         else: return 0
     
@@ -48,12 +49,13 @@ for s in range(1, 20):
 
 print(counter)
 
+print()
 
 def f(s, step=1): # 1p 2v 3p 4v 5p
     if s >= 36 and s <= 60:
         if step in (3, 5): return 1
         else: return 0
-    elif s >= 36 and s > 60:
+    elif s > 60:
         if step in (2, 4): return 1
         else: return 0
     
