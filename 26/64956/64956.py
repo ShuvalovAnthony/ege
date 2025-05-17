@@ -13,11 +13,9 @@ windows = {
     i: [] for i in range(1, 7) 
 }
 
-
-
 leavers = 0
 
-for start, duration, window in clients[:10]:
+for start, duration, window in clients:
     if (not windows[window]):
         windows[window].append(start + duration)
     elif (windows[window][-1] <= start + 30):
