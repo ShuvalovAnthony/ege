@@ -1,4 +1,4 @@
-f = open('26/2653.py/26_2653.txt')
+f = open('ege/26/2653.py/26_2653.txt')
 
 f.readline()
 s = sorted([int(i) for i in f])
