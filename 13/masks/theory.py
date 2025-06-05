@@ -18,8 +18,13 @@
 
 
 
-for i in range(9):
-    mask = ('1'*i).zfill(8)[::-1]
-    # print(mask)
+# for i in range(9):
+#     mask = ('1'*i).zfill(8)[::-1]
+#     # print(mask)
 
-    print(int(mask, 2))
+#     print(int(mask, 2))
+
+
+
+ip_addr = [bin(int(i))[2:].zfill(8) for i in "192.214.116.184".split('.')]
+print(ip_addr)
