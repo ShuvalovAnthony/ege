@@ -10,7 +10,7 @@ clients = sorted([
 
 # время освобождения окна без учета ожидания
 windows = {
-    i: [] for i in range(1, 7) 
+    i: [] for i in range(1, 7)
 }
 
 leavers = 0
