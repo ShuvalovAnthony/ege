@@ -33,7 +33,7 @@ def prime_mnozh(n:int):
     for delitel in all_delit(n):
         if prime(delitel): prime_delit.append(delitel)
     return prime_delit
-
+print(prime_mnozh(1101613))
 
 # разложение на простые множители
 def razlozh_na_prostie(n:int):
