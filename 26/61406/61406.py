@@ -1,4 +1,4 @@
-f = open("26/61406/26.txt")
+f = open("ege/26/61406/26.txt")
 
 events = sorted(
     [
