@@ -8,12 +8,18 @@
 # срез чтобы убрать начальные 2 символа 0b 0o 0x - [2::]
 
 
-# функция по переводу из любой в любую*
+# перевод из любой СС в любую СС до 36ой включительно
+from string import digits, ascii_uppercase
+
+
 def convert(num: str, from_base: int, to_base: int):
     num = int(str(num), from_base)
-    alphabet = '0123456789ABCDEFGHIJKLMNOPQ'
+    alphabet = digits + ascii_uppercase
     answ = alphabet[num%to_base]
     while num >= to_base:
-            num //= to_base
-            answ += alphabet[num%to_base]
+        num //= to_base
+        answ += alphabet[num%to_base]
     return answ[::-1]
+
+# Пример перевода из 16ричной в 27ричную
+print(convert("AB17", 16, 27))
