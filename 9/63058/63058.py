@@ -1,6 +1,6 @@
 f = open('9/63058/63058.txt')
 
-nums = [[int(i) for i in row.split()] for row in f]
+data = [[int(i) for i in row.split()] for row in f]
 
 
 def check(row):
@@ -21,7 +21,7 @@ def check(row):
 
 kolichestvo = 0
 
-for row in nums:
+for row in data:
     if check(row):
         kolichestvo += 1
 
