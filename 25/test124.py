@@ -10,12 +10,12 @@ def check(num: int):
             return i + num//i
 
 
-limit = 5
+limit = 5000
 
 for num in range(700_001, 10**10):
     res = check(num)
     if res and (res%10 == 8):
-        print(num, res)
+        # print(num, res)
 
         limit -= 1
 
