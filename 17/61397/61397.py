@@ -3,12 +3,10 @@ f = open('17/61397/17.txt')
 nums = [int(i) for i in f]
 
 
-
 for num in sorted(nums, reverse=True):
     if str(num)[-2:] == '17':
         max_17 = num
         break
-
 
 def check(num1, num2, num3):
     return (
@@ -24,7 +22,6 @@ def check(num1, num2, num3):
             num1 + num2 + num3 > max_17
         )
     )
-
 
 counter = 0
 max_sum = 0
