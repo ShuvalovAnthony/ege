@@ -33,12 +33,12 @@ def prime_mnozh(n:int):
     for delitel in all_delit(n):
         if prime(delitel): prime_delit.append(delitel)
     return prime_delit
-print(prime_mnozh(1101613))
+
 
 # разложение на простые множители
 def razlozh_na_prostie(n:int):
     prostie = prime_mnozh(n)[1::]
-    mnozh = {i: 0 for i in prostie}
+    mnozh = [{i: 0 for i in prostie}]
     for i in prostie:
         while (n%i == 0):
             n //= i
@@ -48,7 +48,7 @@ def razlozh_na_prostie(n:int):
         result += str(key) + '^' + str(value) + ' * '
     return result
 
-print(razlozh_na_prostie(15381298))
+print(razlozh_na_prostie(15382727))
 
 # разложение на простые множители
 def kolvo_prost_mnpzh(n:int):
@@ -59,8 +59,6 @@ def kolvo_prost_mnpzh(n:int):
             n //= i
             count += 1  
     return count
-
-
 
 
 
