@@ -7,3 +7,8 @@ for x in (0, 1):
         for z in (0, 1):
             if not ((x or y) <= (z == x)):
                 print(x, y, z)
+
+from itertools import product
+
+for x, y, z, in product((0, 1), repeat=3):
+    ...
