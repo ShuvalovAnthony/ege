@@ -6,7 +6,6 @@ temp_goods = []
 
 prices = set()
 
-
 for row in f:
     art, price, status = (int(i) for i in row.split())
     prices.add(price)
@@ -53,6 +52,7 @@ total_list = sorted(total_list, key=lambda x: (
     x[3]
 ))
 
+print(total_list)
 
 # for row in total_list:
 #     print(row)
