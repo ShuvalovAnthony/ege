@@ -20,26 +20,26 @@ for item in temp_goods:
         goods.append(item)
 
 
-# art: [price, sold, least]
+# art: [price, sold, left]
 total = {}
 
 
 for item in goods:
     art = item[0]
     if art in total:
-        price, sold, least = total[art]
+        price, sold, left = total[art]
         if not item[2]:
             sold += 1
         else:
-            least += 1
-        total[art] = [price, sold, least]
+            left += 1
+        total[art] = [price, sold, left]
     else:
         price = item[1]
         sold = item[2]
         total[art] = [price, 0 if sold else 1, 1 if sold else 0]
 
 
-#  [art, price, sold, least]
+#  [art, price, sold, left]
 total_list = []
 
 for art, data in total.items():
@@ -52,15 +52,15 @@ total_list = sorted(total_list, key=lambda x: (
     x[3]
 ))
 
-print(total_list)
+# print(total_list)
 
 # for row in total_list:
 #     print(row)
 
 best_good = total_list[0]
 print(best_good)
-price, sold, least = best_good[1:]
+price, sold, left = best_good[1:]
 
-print(price*sold, least)
+print(price*sold, left)
 
 
