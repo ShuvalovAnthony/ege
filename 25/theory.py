@@ -35,6 +35,7 @@ def prime_mnozh(n:int):
     return prime_delit
 
 
+
 # разложение на простые множители
 def razlozh_na_prostie(n:int):
     prostie = prime_mnozh(n)[1::]
@@ -48,7 +49,7 @@ def razlozh_na_prostie(n:int):
         result += str(key) + '^' + str(value) + ' * '
     return result
 
-print(razlozh_na_prostie(15382727))
+# print(razlozh_na_prostie(15382727))
 
 # разложение на простые множители
 def kolvo_prost_mnpzh(n:int):
